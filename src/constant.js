@@ -5,7 +5,15 @@ import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
-
+import {
+  FaLaptopCode,
+  FaMobileAlt,
+  FaGlobe,
+  FaGamepad,
+  FaPalette,
+  FaBitcoin,
+  FaRobot,
+} from "react-icons/fa";
 // all services
 import { ReactComponent as allServiceIcon1 } from "./assets/svgs/services/Web Development.svg";
 import { ReactComponent as allServiceIcon2 } from "./assets/svgs/services/App Development.svg";
@@ -174,7 +182,7 @@ export const testimonials = [
 ];
 
 // all services
-export const allServices = [
+export const allServicess = [
   {
     id: 1,
     title: "Web Development",
@@ -299,6 +307,145 @@ export const allServices = [
       <br/>
       <br/>
       <p>From mobile games to AAA titles, we are committed to delivering high-quality games that resonate with players and stand out in the market.</p>`,
+  },
+];
+
+export const allServices = [
+  {
+    id: 1,
+    title: "CRM Development",
+    description:
+      "Expertly crafted CRM services that streamline customer relationships, enhance data management, and drive business growth through personalized solutions tailored to your unique needs.",
+    features: [
+      "CRM Customization & Development",
+      "CRM Integration with Third-Party Apps",
+      "CRM Migration & Data Management",
+      "CRM Implementation & Deployment",
+      "CRM Support & Troubleshooting",
+      "CRM Training & Consulting",
+    ],
+    icon: <FaLaptopCode className="z-[2] w-[4rem] h-[4rem]" />,
+  },
+  {
+    id: 2,
+    title: "App Development",
+    link: "/app-development",
+
+    description:
+      "Innovative app development services designed to create engaging, high-performance mobile applications that meet business objectives and provide exceptional user experiences across platforms.",
+    features: [
+      "Native iOS App Development",
+      "Native Android App Development",
+      "Cross-Platform App Development",
+      "Progressive Web App Development",
+      "App Testing & Quality Assurance",
+      "App Maintenance & Feature Upgrades",
+    ],
+    detailHeading:
+      "App Development: Powerful Mobile Solutions for Modern Businesses",
+    detailContent: `<p>In a mobile-first world, having a well-designed app can set your business apart. At AI Company, we specialize in creating custom mobile applications that are user-friendly, feature-rich, and tailored to your specific goals. Our app development services cover everything from concept to deployment:</p>
+    <br/>
+    <ol>
+      <li><b>iOS and Android Apps:</b><br/>Whether you’re targeting iPhone users or Android fans, we develop native apps for both platforms to ensure optimal performance and user experience.</li>
+      <br/>
+      <li><b>Cross-Platform Solutions:</b> <br/> Need to reach a wider audience with one codebase? We develop cross-platform apps that work seamlessly on both iOS and Android, reducing development time and cost without compromising quality.</li>
+      <br/>
+      <li><b>Feature Integration:</b><br/>  From in-app purchases to push notifications and social media integration, we ensure your app has all the features it needs to engage users and drive results.</li>
+    </ol>
+    <br/>
+    <br/>
+    <p>We’re not just about writing code—we're about building apps that solve real business problems and provide exceptional user experiences.</p>`,
+    icon: <FaMobileAlt className="z-[2] w-[4rem] h-[4rem]" />,
+  },
+  {
+    id: 3,
+    title: "Web Development",
+    link: "/web-development",
+
+    description:
+      "Advanced website development with integrated AI-powered chatbots and voice bots, delivering responsive, user-friendly sites that enhance customer interaction and automate service delivery.",
+    features: [
+      "Custom Website Design & Development",
+      "AI Chatbot Development & Integration",
+      "Voice Bot Development & Integration",
+      "E-commerce Website Development",
+      "CMS Development & Management",
+      "Website Maintenance & Optimization",
+    ],
+    detailHeading: "Web Development: Tailored Websites that Deliver Results",
+    detailContent: `<p>At AI Company, we build more than just websites—we create digital experiences that are crafted to perform. Whether you're a small business looking to establish an online presence or a larger company needing a full-featured, scalable platform, our web development services are designed to meet your specific needs. Our team of developers, designers, and strategists work together to:</p>
+    <br/>
+    <ol>
+      <li><b>Develop Custom Websites:</b><br/> No cookie-cutter solutions here. We build each site from the ground up, ensuring it aligns with your brand and business goals.</li>
+      <br/>
+      <li><b>Optimize for Speed and Security:</b> <br/> Performance matters. We ensure your website loads fast and is equipped with the latest security features to protect your data and users.</li>
+      <br/>
+      <li><b>Ensure Scalability:</b><br/>  As your business grows, your website should too. Our websites are built to handle increased traffic and scale with your success.</li>
+    </ol>
+    <br/>
+    <br/>
+    <p>Whether you need an e-commerce platform, a corporate site, or a portfolio, our custom web development services deliver results that enhance your online visibility and user engagement.</p>`,
+    icon: <FaGlobe className="z-[2] w-[4rem] h-[4rem]" />,
+  },
+  {
+    id: 4,
+    title: "Game Development",
+    description:
+      "Creative game development services that bring your vision to life, offering immersive and interactive experiences across mobile, AR/VR, and PC platforms.",
+    features: [
+      "Mobile Game Design & Development",
+      "AR/VR Game Development",
+      "2D/3D Game Art and Animation",
+      "Game Mechanics & Level Design",
+      "Multiplayer Game Development",
+      "Game Testing & Debugging",
+    ],
+    icon: <FaGamepad className="z-[2] w-[4rem] h-[4rem]" />,
+  },
+  {
+    id: 5,
+    title: "UI/UX",
+    description:
+      "Comprehensive UI/UX design services focused on creating intuitive, aesthetically pleasing interfaces that enhance user engagement and elevate the overall digital experience.",
+    features: [
+      "User Research & Persona Development",
+      "Information Architecture & Wireframing",
+      "Interactive Prototyping",
+      "Visual Design & Branding",
+      "Usability Testing & Optimization",
+      "UI/UX Strategy & Consulting",
+    ],
+    icon: <FaPalette className="z-[2] w-[4rem] h-[4rem]" />,
+  },
+  {
+    id: 6,
+    title: "Blockchain Development",
+    description:
+      "We provide cutting-edge Blockchain development services tailored to meet modern business challenges. From secure and scalable blockchain solutions to user-centric designs.",
+    features: [
+      "Smart Contract Development",
+      "Decentralized App (DApp) Development",
+      "Blockchain Integration",
+      "Cryptocurrency Development",
+      "Private & Public Blockchain Solutions",
+      "UI/UX Strategy & Optimization",
+    ],
+    icon: <FaBitcoin className="z-[2] w-[4rem] h-[4rem]" />,
+  },
+  {
+    id: 7,
+    title: "AI Development",
+    description:
+      "We offer state-of-the-art AI development services designed to help businesses unlock their full potential. Our expertise spans various AI domains, delivering intelligent, data-driven solutions that transform operations and drive innovation.",
+    features: [
+      "Machine Learning Models",
+      "Natural Language Processing (NLP)",
+      "Computer Vision",
+      "Predictive Analytics",
+      "AI-Powered Automation",
+      "Custom AI Solutions",
+    ],
+    icon: <FaRobot className="z-[2] w-[4rem] h-[4rem]" />,
   },
 ];
 

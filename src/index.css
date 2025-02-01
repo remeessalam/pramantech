@@ -62,10 +62,10 @@ html {
     @apply text-base font-light;
   }
   .active-link {
-    @apply text-secondary font-medium;
+    @apply text-primary font-medium;
   }
   .primary-btn {
-    @apply text-white font-medium cursor-pointer tracking-wide bg-secondary text-sm hover:shadow-secondary/45 hover:-translate-y-1 shadow-large shadow-transparent rounded-lg px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300;
+    @apply text-white font-medium cursor-pointer tracking-wide bg-primary text-sm hover:shadow-primary/45 hover:-translate-y-1 shadow-large shadow-transparent rounded-lg px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300;
   }
   .secondary-btn {
     @apply text-white font-medium cursor-pointer tracking-wide bg-primary text-sm hover:shadow-primary/25 hover:-translate-y-1 shadow-large shadow-transparent rounded-lg px-4 py-3 min-w-[8rem] flex justify-center text-center transition-all duration-300;

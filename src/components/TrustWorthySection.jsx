@@ -49,7 +49,7 @@ const TrustWorthySection = React.memo(() => {
     }
   }, [inView]);
   return (
-    <div className="bg-gradient-to-b text-background from-primary to-primary py-[2rem]">
+    <div className="bg-gradient-to-b text-background from-gray-500 to-gray-700 py-[2rem]">
       <div
         ref={ref}
         className="w-full grid sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-5 p-[2rem]"
@@ -58,28 +58,28 @@ const TrustWorthySection = React.memo(() => {
           data-aos="fade-up"
           className="w-full flex flex-col items-center justify-center"
         >
-          <h1 className="heading-1 text-secondary">{yrs}+</h1>
+          <h1 className="heading-1 text-primary">{yrs}+</h1>
           <p className="font-medium mt-1 text-xl">Years of Experience</p>
         </div>
         <div
           data-aos="fade-up"
           className="w-full flex flex-col items-center justify-center"
         >
-          <h1 className="heading-1 text-secondary">{experts}+</h1>
+          <h1 className="heading-1 text-primary">{experts}+</h1>
           <p className="font-medium mt-1 text-xl">Expert Team</p>
         </div>
         <div
           data-aos="fade-up"
           className="w-full flex flex-col items-center justify-center"
         >
-          <h1 className="heading-1 text-secondary">{clients}+</h1>
+          <h1 className="heading-1 text-primary">{clients}+</h1>
           <p className="font-medium mt-1 text-xl">Happy Clients</p>
         </div>
         <div
           data-aos="fade-up"
           className="w-full flex flex-col items-center justify-center"
         >
-          <h1 className="heading-1 text-secondary">{completedProjects}+</h1>
+          <h1 className="heading-1 text-primary">{completedProjects}+</h1>
           <p className="font-medium mt-1 text-xl">Projects Completed</p>
         </div>
       </div>

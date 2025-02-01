@@ -27,7 +27,7 @@ const Portfolio = ({ page }) => {
             <div
               data-aos="fade-up"
               key={id}
-              className="p-3 border-2 border-secondary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
+              className="p-3 border-2 border-primary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
             >
               <div className="overflow-hidden relative h-full rounded-xl">
                 <div className="absolute z-[5] top-0 w-full h-full bg-gradient-to-b from-transparent to-primary/20"></div>
@@ -39,7 +39,7 @@ const Portfolio = ({ page }) => {
                   className={`-z-10 h-full w-full object-cover group-hover:scale-110 transition-all duration-200 rounded-xl`}
                   alt={title}
                 />
-                <h3 className="text-xl z-20 absolute p-3 bottom-0 left-0 w-full bg-primary text-center text-white">
+                <h3 className="text-xl z-20 absolute p-3 bottom-0 left-0 w-full bg-primary/70 text-center text-white">
                   {title}
                 </h3>
               </div>

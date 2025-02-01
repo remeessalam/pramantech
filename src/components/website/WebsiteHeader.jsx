@@ -21,7 +21,7 @@ const WebsiteHeader = () => {
   };
 
   return (
-    <div className="py-4 fixed top-0 w-full bg-/50 backdrop-blur-md z-50 text-primary_text">
+    <div className="py-4 font-[poppins] fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 text-black">
       <div className="wrapper flex justify-between items-center gap-10">
         <div className="flex justify-between items-center gap-20 w-full">
           <Helmet>
@@ -47,7 +47,7 @@ const WebsiteHeader = () => {
               <NavLink
                 to={`${option.path}`}
                 className={`link ${
-                  option.path === pathname && "text-secondary font-semibold"
+                  option.path === pathname && "text-primary font-semibold"
                 }`}
                 key={option.path}
               >

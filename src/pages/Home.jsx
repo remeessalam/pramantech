@@ -1,7 +1,7 @@
 import React from "react";
 import bannerImg from "../assets/images/banner.webp";
 import vid from "../assets/vids/banner.mp4";
-import aboutImg from "../assets/images/aboutus-img3.webp";
+import aboutImg from "../assets/images/aboutus-img3.jpg";
 import { Link } from "react-router-dom";
 import SubHeading from "../components/SubHeading";
 import { ReactComponent as Icon1 } from "../assets/svgs/services/Web Development.svg";
@@ -36,22 +36,22 @@ const Home = () => {
     <>
       <WebsiteHeader />
       <section className="h-screen banner relative text-primary_text">
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-background/10 to-background">
+        <div className="absolute top-0 w-full h-full bg-black/30">
           <div
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-4 justify-center items-center h-full relative z-10"
           >
-            <p className="sub-heading">
+            <p className="sub-heading !text-white">
               Welcome to{" "}
               <span className="text-primary font-semibold block sm:inline">
                 AI Company
               </span>
             </p>
-            <h1 className="heading capitalize">
+            <h1 className="heading capitalize !text-white">
               EMPOWERING <br /> GROWTH WITH <br />
               CUTTING-EDGE AI SOLUTIONS
             </h1>
-            <p className="sub-heading max-w-6xl">
+            <p className="sub-heading max-w-6xl !text-white">
               Begin your AI-powered transformation journey with AI Company. Our
               innovative IT services ensure you stay ahead in a competitive
               market.
@@ -94,12 +94,12 @@ const Home = () => {
         data-aos="fade-up"
         className="md:-mt-[7rem] py-[2rem] relative z-10 max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-5"
       >
-        <div className="bg-primary rounded-lg backdrop-blur-sm text-background p-5">
+        <div className="bg-gray-700 rounded-lg backdrop-blur-sm text-background p-5">
           <div className="flex items-center gap-3 mb-4">
             <Icon1
               width="50"
               height="50"
-              className="w-[4rem] h-[4rem] fill-secondary"
+              className="w-[4rem] h-[4rem] fill-white"
             />
             <p className="text-lg leading-tight font-medium">Web Development</p>
           </div>
@@ -108,12 +108,12 @@ const Home = () => {
             effectively represent your brand and engage your audience.
           </p>
         </div>
-        <div className="bg-primary rounded-lg backdrop-blur-sm text-background p-5">
+        <div className="bg-gray-700 rounded-lg backdrop-blur-sm text-background p-5">
           <div className="flex items-center gap-3 mb-4">
             <Icon2
               width="50"
               height="50"
-              className="w-[4rem] h-[4rem] fill-secondary"
+              className="w-[4rem] h-[4rem] fill-white"
             />
             <p className="text-lg leading-tight font-medium">
               Mobile App Development
@@ -124,12 +124,12 @@ const Home = () => {
             platforms that meet your business needs.
           </p>
         </div>
-        <div className="bg-primary rounded-lg backdrop-blur-sm text-background p-5">
+        <div className="bg-gray-700 rounded-lg backdrop-blur-sm text-background p-5">
           <div className="flex items-center gap-3 mb-4">
             <Icon3
               width="50"
               height="50"
-              className="w-[4rem] h-[4rem] fill-secondary"
+              className="w-[4rem] h-[4rem] fill-white"
             />
             <p className="text-lg leading-tight font-medium">AI Development</p>
           </div>
@@ -171,21 +171,38 @@ const Home = () => {
                     alt=""
                   />
                 </div>
-                <h2 className="heading-2 max-w-[60rem]">
-                  Transforming Visions into Reality
-                </h2>
+                <h2 className="heading-2 max-w-[60rem]">About Praman Tech</h2>
                 <p className="desc">
-                  At{" "}
-                  <span className="font-medium text-primary">AI Company</span>
-                  , we're dedicated to driving your business forward with
-                  innovative software solutions. With a passion for technology
-                  and a commitment to excellence, we specialize in delivering
-                  tailored software products and services to meet your unique
-                  needs. <br /> <br /> Our Mission is to revolutionize
-                  industries through technology, empowering businesses to thrive
-                  in a in an advanced AI Tech world. <br /> <br /> We believe in
-                  the power of creativity. We help to create a strong online
-                  presence that showcases your work and tells your story.
+                  At <strong className="text-primary">PramanTech</strong> , we
+                  specialize in delivering innovative digital solutions to help
+                  businesses thrive. From
+                  <span className="font-medium text-primary">
+                    {" "}
+                    website and app development
+                  </span>{" "}
+                  to{" "}
+                  <span className="font-medium text-primary">
+                    game development
+                  </span>
+                  ,{" "}
+                  <span className="font-medium text-primary">CRM systems</span>,{" "}
+                  <span className="font-medium text-primary">UI/UX design</span>
+                  ,{" "}
+                  <span className="font-medium text-primary">
+                    blockchain technology
+                  </span>{" "}
+                  , and{" "}
+                  <span className="font-medium text-primary">
+                    AI development{" "}
+                  </span>
+                  , we provide a range of services to enhance your digital
+                  presence.
+                  <br />
+                  Our expert team combines cutting-edge technology with a focus
+                  on user-centric design to create tailored solutions that drive
+                  growth and streamline operations. Partner with us to build the
+                  future of your business with powerful, scalable, and secure
+                  digital products.
                 </p>
               </div>
               <div className="w-fit mt-4 justify-start">

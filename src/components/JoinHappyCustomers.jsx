@@ -61,8 +61,8 @@ const JoinHappyCustomers = () => {
       <div className="absolute top-0 w-full h-full bg-background/70"></div>
       <div className="relative z-10">
         <div data-aos="fade-up" className="wrapper">
-          <h2 className="heading-2 max-w-[60rem] mx-auto text-center">
-            Join Our <span className="text-secondary">100+</span> Happy Clients
+          <h2 className="heading-1 max-w-[60rem] mx-auto text-center">
+            Join Our <span className="text-primary">100+</span> Happy Clients
           </h2>
         </div>
         <div data-aos="fade-up" ref={sliderRef} className="keen-slider mt-9">

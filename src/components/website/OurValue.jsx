@@ -5,7 +5,7 @@ import SubHeading from "../SubHeading";
 
 const OurValue = () => {
   return (
-    <section className="bg-secondary/10 py-[5rem]">
+    <section className="bg-primary/10 py-[5rem]">
       <div className="wrapper grid md:grid-cols-2 items-center gap-7">
         <div className="flex flex-col items-start gap-5">
           <SubHeading heading="Our Values" />
@@ -20,7 +20,7 @@ const OurValue = () => {
             design.
           </p>
           <div data-aos="fade-up" className="flex gap-5 mt-2">
-            <div className="min-w-[4rem] h-[4rem] bg-secondary rounded-full flex items-center justify-center">
+            <div className="min-w-[4rem] h-[4rem] bg-primary rounded-full flex items-center justify-center">
               <img
                 loading="lazy"
                 src={ourValuesIcon1}
@@ -36,7 +36,7 @@ const OurValue = () => {
             </div>
           </div>
           <div data-aos="fade-up" className="flex gap-5">
-            <div className="min-w-[4rem] h-[4rem] bg-secondary rounded-full flex items-center justify-center">
+            <div className="min-w-[4rem] h-[4rem] bg-primary rounded-full flex items-center justify-center">
               <img
                 loading="lazy"
                 src={ourValuesIcon2}
@@ -57,7 +57,7 @@ const OurValue = () => {
         </div>
         <div
           data-aos="fade-up"
-          className="bg-primary text-white flex flex-col gap-6 h-full justify-center rounded-xl p-10"
+          className="bg-gray-600 text-white flex flex-col gap-6 h-full justify-center rounded-xl p-10"
         >
           <div className="flex flex-col gap-2">
             <div className="flex justify-between gap-4">
@@ -65,7 +65,7 @@ const OurValue = () => {
               <p className="">95%</p>
             </div>
             <div className="w-full bg-white h-2 rounded-full overflow-hidden">
-              <div className="bg-secondary h-full w-[95%]"></div>
+              <div className="bg-primary h-full w-[95%]"></div>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -74,7 +74,7 @@ const OurValue = () => {
               <p className="">98%</p>
             </div>
             <div className="w-full bg-white h-2 rounded-full overflow-hidden">
-              <div className="bg-secondary h-full w-[98%]"></div>
+              <div className="bg-primary h-full w-[98%]"></div>
             </div>
           </div>
           <div className="flex flex-col gap-2">
@@ -83,16 +83,16 @@ const OurValue = () => {
               <p className="">92%</p>
             </div>
             <div className="w-full bg-white h-2 rounded-full overflow-hidden">
-              <div className="bg-secondary h-full w-[92%]"></div>
+              <div className="bg-primary h-full w-[92%]"></div>
             </div>
           </div>
           <div className="flex flex-col gap-2">
             <div className="flex justify-between gap-4">
-              <p className="">IT Consulting</p>
+              <p className="">CRM Development</p>
               <p className="">90%</p>
             </div>
             <div className="w-full bg-white h-2 rounded-full overflow-hidden">
-              <div className="bg-secondary h-full w-[90%]"></div>
+              <div className="bg-primary h-full w-[90%]"></div>
             </div>
           </div>
         </div>

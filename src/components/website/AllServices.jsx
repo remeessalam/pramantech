@@ -28,14 +28,20 @@ const AllServices = () => {
           className="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {allServices.map((service) => (
-            <div className="bg-secondary/15 hover:bg-primary group hover:text-background transition-all duration-300 rounded-lg p-5 flex text-center flex-col justify-between">
+            <div className="bg-secondary/15 hover:bg-primary/60 group hover:text-background transition-all duration-300 rounded-lg p-5 flex text-center flex-col justify-between">
               <div className="flex flex-col items-center">
                 <div className="w-[6rem] h-[6rem] flex justify-center items-center relative">
                   <div className="absolute z-[1] top-0 w-0 group-hover:w-full h-full transition-all duration-300 bg-secondary rounded-full"></div>
-                  <service.icon className="z-[2] w-[4rem] h-[4rem] fill-primary" />
+                  {/* <service.icon className="z-[2] w-[4rem] h-[4rem] fill-primary" /> */}
+                  {service.icon}
                 </div>
                 <h6 className="text-xl font-medium mt-3">{service.title}</h6>
                 <p className="desc mt-2">{service.description}</p>
+                <ul className="flex flex-col gap-2 py-2 text-start list-disc">
+                  {service.features.map((obj, index) => (
+                    <li key={index}>{obj}</li>
+                  ))}
+                </ul>
               </div>
               {service.link && (
                 <Link
@@ -49,7 +55,7 @@ const AllServices = () => {
             </div>
           ))}
         </div>
-        <Drawer
+        {/* <Drawer
           open={isOpen}
           onClose={() => setIsOpen(false)}
           direction="top"
@@ -71,11 +77,12 @@ const AllServices = () => {
                 __html: selectedService.detailContent,
               }}
             ></div>
-            {/* <p className="desc whitespace-pre-line">
+          </div>
+        </Drawer> 
+        */}
+        {/* <p className="desc whitespace-pre-line">
               {selectedService.detailContent}
             </p> */}
-          </div>
-        </Drawer>
       </div>
     </section>
   );
