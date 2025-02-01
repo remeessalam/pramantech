@@ -82,31 +82,31 @@ export const routes = [
 export const webDevelopmentServices = [
   {
     id: 1,
-    title: "E-commerce Websites",
+    title: "Frontend Development",
     icon: webServiceIcon1,
     description:
-      "Empowering your online business with tailored ecommerce solutions. Our platforms boost customer engagement, streamline operations, and drive revenue growth. ",
+      "Crafting visually stunning and highly responsive frontends that enhance user experience. We ensure seamless performance across all devices and browsers.",
   },
   {
     id: 2,
-    title: "Social Media Websites",
+    title: "Backend Development",
     icon: webServiceIcon2,
     description:
-      "Get custom social media websites that captivate and engage your audience, driving growth and brand loyalty effortlessly",
+      "Building robust and scalable backend systems that power your applications. Our solutions ensure security, performance, and seamless data management.",
   },
   {
     id: 3,
-    title: "Landing Websites",
+    title: "Database Schema",
     icon: webServiceIcon3,
     description:
-      " Creating high-converting landing pages that capture attention and drive action. Tailored designs that showcase your brand’s message and maximize conversions.",
+      "Designing efficient and optimized database schemas to store, retrieve, and manage your data effectively. Ensuring structured and scalable data management.",
   },
   {
     id: 4,
-    title: "Custom Websites",
+    title: "UI / UX",
     icon: webServiceIcon4,
     description:
-      "Delivering tailor-made websites designed to meet your unique business needs. Our solutions blend creativity and functionality for an exceptional online experience.",
+      "Creating intuitive and aesthetically pleasing UI/UX designs that captivate users and enhance engagement. Focused on usability, accessibility, and innovation.",
   },
 ];
 
@@ -114,31 +114,31 @@ export const webDevelopmentServices = [
 export const appDevelopmentServices = [
   {
     id: 1,
-    title: "iOS App Development",
+    title: "iOS Development",
     icon: appServiceIcon1,
     description:
-      "Our skilled developers work with both Swift and Objective-C to build robust and efficient apps. We optimize your app for performance, speed, and responsiveness.",
+      "Our skilled developers work with both Swift and Objective-C to build robust and efficient iOS applications. We optimize your app for performance, speed, and responsiveness.",
   },
   {
     id: 2,
-    title: "Android App Development",
+    title: "Android Development",
     icon: appServiceIcon2,
     description:
-      "We design and develop tailor-made Android apps that align with your vision and business goals.Proficient in both Java and Kotlin, we build robust and efficient apps.",
+      "We design and develop tailor-made Android applications that align with your vision and business goals. Proficient in both Java and Kotlin, we build scalable and efficient apps.",
   },
   {
     id: 3,
-    title: "Flutter App Development",
+    title: "PWA Apps",
     icon: appServiceIcon3,
     description:
-      "Flutter allows you to build apps for both iOS and Android using a single codebase. While Flutter's default web app architecture presents challenges, we can overcome them with smart strategies. ",
+      "Progressive Web Apps (PWAs) provide a seamless experience across web and mobile, offering the best of both worlds. We develop fast, reliable, and engaging PWAs that enhance user interaction.",
   },
   {
     id: 4,
-    title: "Hybrid App Development",
+    title: "Hybrid Apps",
     icon: appServiceIcon4,
     description:
-      "We build feature-rich hybrid apps tailored to your business needs. We create mobile-friendly apps that work seamlessly across iOS and Android devices.",
+      "We build feature-rich hybrid applications tailored to your business needs. Our solutions ensure smooth performance and compatibility across both iOS and Android devices.",
   },
 ];
 

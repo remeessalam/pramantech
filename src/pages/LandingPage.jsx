@@ -5,7 +5,7 @@ import appBanner from "../assets/images/app-banner-landing.jpg";
 import SubHeading from "../components/SubHeading";
 import { appDevelopmentServices, webDevelopmentServices } from "../constant";
 import TrustWorthySection from "../components/TrustWorthySection";
-import appDevAboutImg from "../assets/images/landingpage/app-dev-about.jpg";
+import appDevAboutImg from "../assets/images/landingpage/app-dev-about.png";
 import webDevAboutImg from "../assets/images/landingpage/web-dev-about.jpg";
 import ReactPlayer from "react-player";
 
@@ -44,7 +44,7 @@ const LandingPage = ({ page }) => {
         id="banner"
         className="h-screen banner relative text-primary_text"
       >
-        <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background via-background/10 to-background">
+        <div className="absolute top-0 w-full h-full bg-black/30">
           {/* <div className="absolute top-0 w-full h-full bg-gradient-to-b from-background/60 via-[#ffffffb5] to-background/60"> */}
           {/* <img
           loading="lazy"
@@ -60,18 +60,18 @@ const LandingPage = ({ page }) => {
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-5 justify-center items-center h-full relative z-10"
           >
-            <p className="sub-heading">
+            <p className="sub-heading !text-white">
               Welcome to{" "}
               <span className="text-primary font-semibold block sm:inline">
                 Praman Tech
               </span>
             </p>
-            <h1 className="heading-1 whitespace-pre-line capitalize">
+            <h1 className="heading-1 whitespace-pre-line capitalize !text-white">
               {isWebLanding
                 ? "Elevate your business with cutting-edge Website Development"
                 : "Innovation-Driven App Development Services"}
             </h1>
-            <p className="sub-heading max-w-6xl mx-auto">
+            <p className="sub-heading max-w-6xl mx-auto !text-white">
               Transform your business with our advanced IT services, enhancing
               efficiency, agility, and growth in today's fast-paced digital
               world.
@@ -145,6 +145,7 @@ const LandingPage = ({ page }) => {
           </div>
         </div>
       </section>
+      <Portfolio page={page} />
 
       <section
         id="services"
@@ -178,7 +179,6 @@ const LandingPage = ({ page }) => {
       </section>
 
       <TrustWorthySection />
-      <Portfolio page={page} />
       <WhyChooseUs />
       <ConnectWithUs />
       <Testimonials />
