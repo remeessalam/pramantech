@@ -44,7 +44,7 @@ const Home = () => {
             <p className="sub-heading !text-white">
               Welcome to{" "}
               <span className="text-primary font-semibold block sm:inline">
-                AI Company
+                Praman Tech
               </span>
             </p>
             <h1 className="heading capitalize !text-white">
@@ -52,7 +52,7 @@ const Home = () => {
               CUTTING-EDGE AI SOLUTIONS
             </h1>
             <p className="sub-heading max-w-6xl !text-white">
-              Begin your AI-powered transformation journey with AI Company. Our
+              Begin your AI-powered transformation journey with Praman Tech. Our
               innovative IT services ensure you stay ahead in a competitive
               market.
             </p>

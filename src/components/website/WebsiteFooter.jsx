@@ -29,7 +29,7 @@ const WebsiteFooter = () => {
             alt="logo"
           />
           <p className="desc text-sm max-w-[22rem] mt-3">
-            At AI Company, we're dedicated to driving your business forward
+            At Praman Tech, we're dedicated to driving your business forward
             with innovative software solutions. With a passion for technology
             and a commitment to excellence, we specialize in delivering tailored
             software products and services to meet your unique needs.
