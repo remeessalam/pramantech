@@ -62,7 +62,7 @@ export const BlogItem = ({ blog }) => {
   return (
     <div
       data-aos="fade-up"
-      className="bg-secondary/10 rounded-xl p-5 text-primary_text relative z-10 group"
+      className="bg-secondary/10 flex flex-col justify-between rounded-xl p-5 text-primary_text relative z-10 group"
     >
       <Link to={`/blogs/${blog.id}`}>
         <img
