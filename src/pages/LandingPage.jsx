@@ -60,9 +60,9 @@ const LandingPage = ({ page }) => {
             data-aos="fade-up"
             className="wrapper text-center flex flex-col gap-5 justify-center items-center h-full relative z-10"
           >
-            <p className="sub-heading !text-white">
+            <p className="sub-heading !text-white !text-4xl">
               Welcome to{" "}
-              <span className="text-primary font-semibold block sm:inline">
+              <span className="text-white font-semibold block sm:inline">
                 Praman Tech
               </span>
             </p>
