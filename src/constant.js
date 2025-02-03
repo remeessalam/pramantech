@@ -54,6 +54,14 @@ import MybitsShopImg from "./assets/app-development-portfolio/mybitsshop.png";
 import NamazImg from "./assets/app-development-portfolio/namaz.png";
 import PoteaImg from "./assets/app-development-portfolio/potea.png";
 import RentopBikeAndCarImg from "./assets/app-development-portfolio/rentop bike and car.png";
+// blogs image
+import blogone from "./assets/blogs/blogone.png";
+import blogtwo from "./assets/blogs/blogtwo.png";
+import blogthree from "./assets/blogs/blogthree.png";
+import blogfour from "./assets/blogs/blogfour.png";
+import blogfive from "./assets/blogs/blogfive.png";
+import blogsix from "./assets/blogs/blogsix.png";
+import blogseven from "./assets/blogs/blogseven.png";
 export { logoImg };
 
 export const companyDetails = {
@@ -469,39 +477,6 @@ export const allServices = [
   },
 ];
 
-// portfolio images (web development)
-// export const webPortfolios = [
-//   {
-//     id: 1,
-//     img: require("./assets/images/web_projects/1.webp"),
-//     title: "FE-Finance",
-//   },
-//   {
-//     id: 2,
-//     img: require("./assets/images/web_projects/2.webp"),
-//     title: "Ocxee",
-//   },
-//   {
-//     id: 3,
-//     img: require("./assets/images/web_projects/3.webp"),
-//     title: "Leaderbridge",
-//   },
-//   {
-//     id: 4,
-//     img: require("./assets/images/web_projects/4.webp"),
-//     title: "Gigzio",
-//   },
-//   {
-//     id: 5,
-//     img: require("./assets/images/web_projects/5.webp"),
-//     title: "FE Group",
-//   },
-//   {
-//     id: 6,
-//     img: require("./assets/images/web_projects/6.webp"),
-//     title: "V Talkz",
-//   },
-// ];
 export const webPortfolio = [
   {
     id: 1,
@@ -559,30 +534,6 @@ export const webPortfolio = [
   },
 ];
 
-// portfolio images (app development)
-// export const appPortfolio = [
-//   {
-//     id: 1,
-//     img: require("./assets/images/app_projects/1.webp"),
-//     title: "PartEx",
-//   },
-//   {
-//     id: 2,
-//     img: require("./assets/images/app_projects/2.webp"),
-//     title: "Find A Driver",
-//   },
-//   {
-//     id: 3,
-//     img: require("./assets/images/app_projects/3.webp"),
-//     title: "Artisan Express",
-//   },
-//   {
-//     id: 4,
-//     img: require("./assets/images/app_projects/4.webp"),
-//     title: "House of Deliverance",
-//   },
-// ];
-
 export const appPortfolio = [
   {
     id: 1,
@@ -631,5 +582,67 @@ export const appPortfolio = [
     img: RentopBikeAndCarImg,
     title: "Rentop Bike and Car",
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
+  },
+];
+
+export const blogsDetails = [
+  {
+    id: 1,
+    image: blogone,
+    title: "AI Agents in Real Estate",
+    description:
+      "Artificial Intelligence (AI) is transforming the real estate industry, making property buying, selling, and management more efficient and data-driven. While traditional real estate processes often involve manual work, AI agents are now taking center stage, streamlining operations and enhancing decision-making. Whether you're a buyer, seller, or investor, AI-driven solutions are changing the way real estate transactions happen.",
+    link: "https://pramantechappdevelopment.blogspot.com/2025/02/ai-agents-in-real-estate.html",
+  },
+  {
+    id: 2,
+    image: blogtwo,
+    title: "AI in Healthcare: Transforming Patient Care & Medical Innovation",
+    description:
+      "Artificial Intelligence (AI) is revolutionizing the healthcare industry, offering unprecedented advancements in diagnostics, treatment, patient management, and operational efficiency. From predictive analytics to robotic surgeries, AI-driven solutions are reshaping the way medical professionals deliver care. As the demand for smarter, faster, and more accurate healthcare solutions grows, AI is becoming the backbone of modern medicine.",
+    link: "https://pramantechappdevelopment.blogspot.com/2025/02/ai-in-healthcare-transforming-patient.html",
+  },
+  {
+    id: 3,
+    image: blogthree,
+    title:
+      "The AI Revolution in Real Estate: Transforming the Industry with PramanTech Solutions",
+    description:
+      "The real estate industry, traditionally characterized by face-to-face interactions and manual processes, is undergoing a significant transformation. Artificial Intelligence (AI) is driving this change, offering innovative solutions to enhance efficiency, improve user experience, and create smarter workflows. At PramanTech, we’re at the forefront of this revolution, empowering real estate businesses with cutting-edge AI tools to stay competitive in a fast-evolving market.blo",
+    link: "https://pramantechappdevelopment.blogspot.com/2024/12/AIinrealestate.html",
+  },
+  {
+    id: 4,
+    image: blogfour,
+    title:
+      "Exploring the Future of Gaming with Virtual Reality (VR): A Game-Changer in the Industry",
+    description:
+      "In the past few decades, technology has made leaps and bounds, transforming almost every aspect of our lives. One of the most exciting innovations that has taken the world by storm is Virtual Reality (VR). Once considered a futuristic concept, VR is now a reality that is shaping multiple industries, including gaming, healthcare, education, and even real estate. Among these, gaming stands out as one of the most prominent fields to benefit from VR, providing a truly immersive experience that transports players into another world.",
+    link: "https://pramantechappdevelopment.blogspot.com/2024/12/gamdevelopment.html",
+  },
+  {
+    id: 5,
+    image: blogfive,
+    title:
+      "Cybersecurity in the Digital Age: Protecting Your Data in an Evolving Threat Landscape",
+    description:
+      "In today’s hyper-connected world, cybersecurity is no longer a luxury; it is a necessity. With the exponential growth of technology, the risks to individuals, businesses, and governments have surged. From phishing attacks to ransomware, cybercriminals are evolving, finding innovative ways to exploit vulnerabilities. For organizations, the challenge is clear: stay ahead of the curve or risk losing everything.",
+    link: "https://pramantechappdevelopment.blogspot.com/2024/11/cybersecurityblog.html",
+  },
+  {
+    id: 6,
+    image: blogsix,
+    title: "Why Custom App Development is the Key to Business Growth in 2024",
+    description:
+      "In today’s fast-paced digital economy, having a unique app tailored to your business needs is no longer a luxury—it’s a necessity. Off-the-shelf solutions may offer quick fixes, but they often lack the flexibility, scalability, and uniqueness that modern businesses require to thrive.",
+    link: "https://pramantechappdevelopment.blogspot.com/2024/11/Appdevelopmentblog.html",
+  },
+  {
+    id: 7,
+    image: blogseven,
+    title: "How Blockchain Secures Data Like Never Before",
+    description:
+      "Blockchain technology is redefining the digital landscape by providing secure, transparent, and tamper-proof solutions. Initially created as the backbone for cryptocurrencies like Bitcoin, blockchain's potential now extends to industries such as finance, real estate, healthcare, and beyond. At PramanTech, we leverage blockchain to empower businesses with next-gen solutions, unlocking unmatched security and efficiency.",
+    link: "https://pramantechappdevelopment.blogspot.com/2024/12/Blockchaindevelopment.html",
   },
 ];

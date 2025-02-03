@@ -1,12 +1,6 @@
 import React from "react";
 import { companyDetails, logoImg } from "../../constant";
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  Phone,
-  Twitter,
-} from "lucide-react";
+import { Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
@@ -27,23 +21,23 @@ const LandingFooter = () => {
             alt="logo"
           />
           <div className="flex items-center gap-3 mt-5">
-          <Link
+            <Link
               aria-label="Contact us on Instagram"
-              to={companyDetails.instagram}
+              to={companyDetails?.instagram}
               className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Instagram strokeWidth={1.5} size={20} />
             </Link>
             <Link
               aria-label="Contact us on Twitter"
-              to={companyDetails.twitter}
+              to={companyDetails?.twitter}
               className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Twitter strokeWidth={1.5} size={20} />
             </Link>
             <Link
               aria-label="Contact us on LinkedIn"
-              to={companyDetails.linkedin}
+              to={companyDetails?.linkedin}
               className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Linkedin strokeWidth={1.5} size={20} />
@@ -59,12 +53,12 @@ const LandingFooter = () => {
                 size={20}
                 className="text-primary inline min-w-5"
               />{" "}
-              <span className="text-sm">{companyDetails.address}</span>
+              <span className="text-sm">{companyDetails?.address}</span>
             </li> */}
             <li className="flex gap-3 text-primary_text/70">
               <Link
                 aria-label="Contact us on email"
-                to={`mailto:${companyDetails.email}`}
+                to={`mailto:${companyDetails?.email}`}
                 className="flex gap-3 text-primary_text/70 hover:text-primary transition-colors duration-200"
               >
                 <Mail
@@ -72,13 +66,13 @@ const LandingFooter = () => {
                   size={20}
                   className="text-primary inline"
                 />{" "}
-                <span className="text-sm">{companyDetails.email}</span>
+                <span className="text-sm">{companyDetails?.email}</span>
               </Link>
             </li>
             <li>
               <Link
                 aria-label="Contact us on phone"
-                to={`tel:${companyDetails.phone}`}
+                to={`tel:${companyDetails?.phone}`}
                 className="flex gap-3 text-primary_text/70 hover:text-primary transition-colors duration-200"
               >
                 <Phone
@@ -86,7 +80,7 @@ const LandingFooter = () => {
                   size={20}
                   className="text-primary inline"
                 />{" "}
-                <span className="text-sm">{companyDetails.phone}</span>
+                <span className="text-sm">{companyDetails?.phone}</span>
               </Link>
             </li>
           </ul>

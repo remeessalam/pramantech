@@ -137,7 +137,7 @@ const WebsiteFooter = () => {
             </p>
             <div className="space-y-4">
               <Link
-                to={`mailto:${companyDetails.email}`}
+                to={`mailto:${companyDetails?.email}`}
                 className="flex items-center gap-2"
               >
                 <IoMail className="h-5 w-5" />
@@ -196,28 +196,28 @@ const WebsiteFooter = () => {
               <HiLocationMarker className="h-6 w-6 mt-1" />
               <div>
                 <h4 className="text-black font-semibold">Canada</h4>
-                <p>{companyDetails.phone}</p>
+                <p>{companyDetails?.phone}</p>
               </div>
             </div>
             <div className="flex items-start gap-2">
               <HiLocationMarker className="h-6 w-6 mt-1" />
               <div>
                 <h4 className="text-black font-semibold">India</h4>
-                <p>{companyDetails.phone}</p>
+                <p>{companyDetails?.phone}</p>
               </div>
             </div>
             <div className="flex items-start gap-2">
               <HiLocationMarker className="h-6 w-6 mt-1" />
               <div>
                 <h4 className="text-black font-semibold">UAE</h4>
-                <p>{companyDetails.phone}</p>
+                <p>{companyDetails?.phone}</p>
               </div>
             </div>
             <div className="flex items-start gap-2">
               <HiLocationMarker className="h-6 w-6 mt-1" />
               <div>
                 <h4 className="text-black font-semibold">USA</h4>
-                <p>{companyDetails.phone}</p>
+                <p>{companyDetails?.phone}</p>
               </div>
             </div>
           </div>

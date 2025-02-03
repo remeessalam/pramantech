@@ -16,16 +16,16 @@ const ThankYou = () => {
   return (
     <>
       <div className="h-[calc(100vh-10rem)] flex flex-col items-center justify-center bg-secondary/5">
-        <div className="py-4 sticky top-0 w-full bg-secondary/60 backdrop-blur-md z-50 text-primary_text">
+        <div className="py-4 sticky top-0 w-full bg-white/60 backdrop-blur-md z-50 text-primary_text">
           <div className="wrapper flex justify-between items-center gap-10">
             <div className="flex justify-between items-center gap-20 w-full pl-[1rem] lg:pl-0">
               <Link smooth={true} to="/" className="cursor-pointer">
                 <img
                   loading="lazy"
                   src={logoImg}
-                  width={150}
-                  height={150}
-                  className="h-[3rem] md:h-[3.75rem] scale-125"
+                  width="75"
+                  height="75"
+                  className="w-[6rem] md:w-[8rem] scale-125 object-contain"
                   alt="logo"
                 />
               </Link>
@@ -64,19 +64,19 @@ const ThankYou = () => {
             </p>
             <div className="flex items-center gap-3 mt-5">
               <Link
-                to={companyDetails.instagram}
+                to={companyDetails?.instagram}
                 className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
               >
                 <Instagram strokeWidth={1.5} size={20} />
               </Link>
               <Link
-                to={companyDetails.twitter}
+                to={companyDetails?.twitter}
                 className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
               >
                 <Twitter strokeWidth={1.5} size={20} />
               </Link>
               <Link
-                to={companyDetails.linkedin}
+                to={companyDetails?.linkedin}
                 className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
               >
                 <Linkedin strokeWidth={1.5} size={20} />
@@ -109,11 +109,11 @@ const ThankYou = () => {
                     size={20}
                     className="text-primary inline min-w-5"
                   />{" "}
-                  <span className="text-sm">{companyDetails.address}</span>
+                  <span className="text-sm">{companyDetails?.address}</span>
                 </li> */}
                 <li className="flex gap-3 text-primary_text/70">
                   <Link
-                    to={`mailto:${companyDetails.email}`}
+                    to={`mailto:${companyDetails?.email}`}
                     className="flex gap-3 text-primary_text/70 hover:text-primary transition-colors duration-200"
                   >
                     <Mail
@@ -121,12 +121,12 @@ const ThankYou = () => {
                       size={20}
                       className="text-primary inline"
                     />{" "}
-                    <span className="text-sm">{companyDetails.email}</span>
+                    <span className="text-sm">{companyDetails?.email}</span>
                   </Link>
                 </li>
                 <li>
                   <Link
-                    to={`tel:${companyDetails.phone}`}
+                    to={`tel:${companyDetails?.phone}`}
                     className="flex gap-3 text-primary_text/70 hover:text-primary transition-colors duration-200"
                   >
                     <Phone
@@ -134,7 +134,7 @@ const ThankYou = () => {
                       size={20}
                       className="text-primary inline"
                     />{" "}
-                    <span className="text-sm">{companyDetails.phone}</span>
+                    <span className="text-sm">{companyDetails?.phone}</span>
                   </Link>
                 </li>
               </ul>

@@ -37,7 +37,7 @@ const ContactForm = () => {
 
     // Construct the request payload
     var payload = {
-      to: companyDetails.email,
+      to: companyDetails?.email,
       subject: values.subject,
       body: emailBody,
     };

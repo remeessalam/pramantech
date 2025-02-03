@@ -3,33 +3,34 @@ import { Link } from "react-router-dom";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
+import { blogsDetails } from "../constant";
 // import { blogs } from "../../data/blogs";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
-export const blogs = [
-  {
-    id: 1,
-    image:
-      "https://rejolut.com/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-20-16.55.07-Create-a-wide-banner-image-for-the-topic-_Top-18-Artificial-Intelligence-AI-Applications-in-2024._-This-image-should-visually-represent-a-diverse-ra-1024x585.webp",
-  },
-  {
-    id: 2,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7-HVWQHxnNuywiR26jyAgbY1vBXIwAAS9w&s",
-  },
-  {
-    id: 3,
-    image:
-      "https://itbrief.com.au/uploads/story/2023/11/27/img-d320oqYWscvU8q8HLX0brOyX.webp",
-  },
-  {
-    id: 4,
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s",
-  },
-];
+// export const blogs = [
+//   {
+//     id: 1,
+//     image:
+//       "https://rejolut.com/wp-content/uploads/2024/02/DALL%C2%B7E-2024-02-20-16.55.07-Create-a-wide-banner-image-for-the-topic-_Top-18-Artificial-Intelligence-AI-Applications-in-2024._-This-image-should-visually-represent-a-diverse-ra-1024x585.webp",
+//   },
+//   {
+//     id: 2,
+//     image:
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu7-HVWQHxnNuywiR26jyAgbY1vBXIwAAS9w&s",
+//   },
+//   {
+//     id: 3,
+//     image:
+//       "https://itbrief.com.au/uploads/story/2023/11/27/img-d320oqYWscvU8q8HLX0brOyX.webp",
+//   },
+//   {
+//     id: 4,
+//     image:
+//       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4GQuewxLfMh2olMxwVIVsJmu1qFf5Q4dwZw&s",
+//   },
+// ];
 const Blogs = () => {
-  return ( 
+  return (
     <>
       <WebsiteHeader />
       <PageBanner title="Blogs" />
@@ -43,7 +44,7 @@ const Blogs = () => {
             Insights and Innovations: Your Gateway to IT Excellence
           </h4>
           <div className="mt-[2rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-            {blogs.map((blog) => (
+            {blogsDetails.map((blog) => (
               <BlogItem key={blog.id} blog={blog} />
             ))}
           </div>
@@ -82,15 +83,16 @@ export const BlogItem = ({ blog }) => {
           to={`/blogs/${blog.id}`}
           className="text-xl hyphen-auto font-medium leading-tight line-clamp-2 text-ellipsis hover:text-primary transition-all duration-200"
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure
-          neque nihil
-          {/* {blog.title} */}
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora iure
+          neque nihil */}
+          {blog.title}
         </Link>
         <p className="desc leading-tight text-gray-800 line-clamp-3 text-ellipsis hyphen-auto">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+          {/* Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
           porro excepturi et eos corrupti magnam vel voluptatibus aperiam atque
           voluptatum dolor ullam alias similique hic aliquam provident minima
-          cumque doloremque!
+          cumque doloremque! */}
+          {blog.description}
         </p>
         {/* <div
           dangerouslySetInnerHTML={{ __html: blog.content }}
@@ -102,7 +104,7 @@ export const BlogItem = ({ blog }) => {
         <p className="text-gray-400 text-[.8rem]">12th May 2023</p>
       </div> */}
       <div className="mt-6 w-full flex justify-center">
-        <Link to={`/blogs/${blog.id}`} className="secondary-btn w-full">
+        <Link to={`${blog.link}`} className="secondary-btn w-full">
           Read More
         </Link>
       </div>

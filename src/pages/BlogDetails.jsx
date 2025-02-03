@@ -1,19 +1,21 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
-import { BlogItem, blogs } from "./Blogs";
+import { BlogItem } from "./Blogs";
 import WebsiteHeader from "../components/website/WebsiteHeader";
 import WebsiteFooter from "../components/website/WebsiteFooter";
 import SubHeading from "../components/SubHeading";
+import { blogsDetails } from "../constant";
 // import { blogs } from "../../data/blogs";
 const PageBanner = React.lazy(() => import("../components/website/PageBanner"));
 
 const BlogDetails = () => {
   const { id } = useParams();
-  const blog = blogs.find((item) => item.id === Number(id));
+  const blog = blogsDetails.find((item) => item.id === Number(id));
   if (!blog) {
     return <Navigate to="/blogs" />;
   }
-  const latestBlogs = blogs.filter((item) => item.id !== Number(id)) || [];
+  const latestBlogs =
+    blogsDetails.filter((item) => item.id !== Number(id)) || [];
   return (
     <>
       <WebsiteHeader />
@@ -80,7 +82,7 @@ const BlogDetails = () => {
             <div className="pt-[3rem]">
               <SubHeading heading="Recent Blogs" />
               <div className="mt-[1.5rem] grid sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7">
-                {blogs
+                {blogsDetails
                   .filter((item) => item.id !== blog.id)
                   .slice(0, 3)
                   .map((item) => (

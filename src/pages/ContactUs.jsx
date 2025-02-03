@@ -21,33 +21,29 @@ const ContactUs = () => {
               data-aos="fade-up"
               className="bg-primary/5 flex flex-col gap-3 text-primary items-center justify-center rounded-xl p-5"
             >
-              <MapPin
-                strokeWidth={2}
-                size={40}
-                className="inline"
-              />
+              <MapPin strokeWidth={2} size={40} className="inline" />
               <span className="text-center font-medium">
-                {companyDetails.address}
+                {companyDetails?.address}
               </span>
             </div>
             <Link
-              to={`mailto:${companyDetails.email}`}
+              to={`mailto:${companyDetails?.email}`}
               data-aos="fade-up"
               className="bg-primary/5 flex flex-col gap-3 text-primary items-center justify-center rounded-xl p-5"
             >
               <Mail strokeWidth={2} size={40} className="inline" />
               <span className="text-center font-medium">
-                {companyDetails.email}
+                {companyDetails?.email}
               </span>
             </Link>
             <Link
-              to={`tel:${companyDetails.phone}`}
+              to={`tel:${companyDetails?.phone}`}
               data-aos="fade-up"
               className="bg-primary/5 flex flex-col gap-3 text-primary items-center justify-center rounded-xl p-5"
             >
               <Phone strokeWidth={2} size={40} className="inline" />
               <span className="text-center font-medium">
-                {companyDetails.phone}
+                {companyDetails?.phone}
               </span>
             </Link>
           </div>
