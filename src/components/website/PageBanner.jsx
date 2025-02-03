@@ -8,7 +8,7 @@ const PageBanner = ({ title, desc }) => {
       className="w-full min-h-[55vh] h-fit py-[1rem] bg-cover bg-top relative flex items-center justify-center"
       style={{
         backgroundImage: `url(${
-          title === "Contact Us" ? contactusbanner : bannerImg
+          title === "Contact Us" ? contactusbanner : contactusbanner
         })`,
       }}
     >
@@ -17,7 +17,9 @@ const PageBanner = ({ title, desc }) => {
       <div className="w-full translate-y-[20%]">
         <div data-aos="fade-up" className="wrapper text-center">
           <h1
-            className={`heading-1 ${title === "Contact Us" && `!text-white`}`}
+            className={`heading-1 !text-white ${
+              title === "Contact Us" && `!text-white`
+            }`}
           >
             {title}
           </h1>

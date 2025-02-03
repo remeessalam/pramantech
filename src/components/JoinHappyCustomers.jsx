@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../assets/images/bg-img.webp";
+import bgImg from "../assets/images/bg-img.jpg";
 import { useKeenSlider } from "keen-slider/react";
 import img1 from "../assets/images/client-logos/1.png";
 import img2 from "../assets/images/client-logos/2.png";
@@ -58,7 +58,7 @@ const JoinHappyCustomers = () => {
       className="py-[5rem] bg-center bg-cover relative text-primary_text"
       style={{ backgroundImage: `url(${bgImg})` }}
     >
-      <div className="absolute top-0 w-full h-full bg-background/70"></div>
+      <div className="absolute top-0 w-full h-full bg-background/50"></div>
       <div className="relative z-10">
         <div data-aos="fade-up" className="wrapper">
           <h2 className="heading-1 max-w-[60rem] mx-auto text-center">

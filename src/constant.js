@@ -333,21 +333,6 @@ export const allServicess = [
 export const allServices = [
   {
     id: 1,
-    title: "CRM Development",
-    description:
-      "Expertly crafted CRM services that streamline customer relationships, enhance data management, and drive business growth through personalized solutions tailored to your unique needs.",
-    features: [
-      "CRM Customization & Development",
-      "CRM Integration with Third-Party Apps",
-      "CRM Migration & Data Management",
-      "CRM Implementation & Deployment",
-      "CRM Support & Troubleshooting",
-      "CRM Training & Consulting",
-    ],
-    icon: <FaLaptopCode className="z-[2] w-[4rem] h-[4rem]" />,
-  },
-  {
-    id: 2,
     title: "App Development",
     link: "/app-development",
 
@@ -378,7 +363,7 @@ export const allServices = [
     icon: <FaMobileAlt className="z-[2] w-[4rem] h-[4rem]" />,
   },
   {
-    id: 3,
+    id: 2,
     title: "Web Development",
     link: "/web-development",
 
@@ -406,6 +391,21 @@ export const allServices = [
     <br/>
     <p>Whether you need an e-commerce platform, a corporate site, or a portfolio, our custom web development services deliver results that enhance your online visibility and user engagement.</p>`,
     icon: <FaGlobe className="z-[2] w-[4rem] h-[4rem]" />,
+  },
+  {
+    id: 3,
+    title: "CRM Development",
+    description:
+      "Expertly crafted CRM services that streamline customer relationships, enhance data management, and drive business growth through personalized solutions tailored to your unique needs.",
+    features: [
+      "CRM Customization & Development",
+      "CRM Integration with Third-Party Apps",
+      "CRM Migration & Data Management",
+      "CRM Implementation & Deployment",
+      "CRM Support & Troubleshooting",
+      "CRM Training & Consulting",
+    ],
+    icon: <FaLaptopCode className="z-[2] w-[4rem] h-[4rem]" />,
   },
   {
     id: 4,

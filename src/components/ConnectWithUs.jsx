@@ -1,6 +1,8 @@
 import React from "react";
-import bgImg from "../assets/images/bg-img.webp";
-import bannerImg from "../assets/images/banner.webp";
+// import bgImg from "../assets/images/bg-img.webp";
+// import bannerImg from "../assets/images/banner.webp";
+import contactusbanner from "../assets/images/contactusbanner.jpg";
+
 import { Link } from "react-router-dom";
 
 const ConnectWithUs = () => {
@@ -13,9 +15,9 @@ const ConnectWithUs = () => {
       <div data-aos="fade-up" className="max-w-7xl mx-auto">
         <div
           className="mx-5 rounded-xl overflow-hidden bg-center bg-cover relative shadow-inner shadow-primary/40"
-          style={{ backgroundImage: `url(${bannerImg})` }}
+          style={{ backgroundImage: `url(${contactusbanner})` }}
         >
-          <div className="absolute top-0 w-full h-full bg-primary/15"></div>
+          <div className="absolute top-0 w-full h-full bg-white/25"></div>
           <div className="py-[3rem] px-5 bg-white/40 rounded-xl backdrop-blur-sm text-primary_text relative z-10">
             <h1 className="heading-2_1 max-w-[60rem] mx-auto text-center">
               Let's Build Something Amazing Together! Connect with Us Today!

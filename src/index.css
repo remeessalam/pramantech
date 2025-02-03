@@ -41,7 +41,7 @@ html {
     @apply max-w-7xl mx-auto px-4;
   }
   .heading {
-    @apply text-[2.75rem] md:text-[5.5rem] font-bold leading-[1.15];
+    @apply text-[2.55rem] md:text-[4.5rem] font-bold leading-[1.15];
   }
   .heading-1 {
     @apply text-[2.75rem] md:text-[3.75rem] font-semibold leading-tight;

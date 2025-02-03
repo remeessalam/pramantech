@@ -3,9 +3,9 @@ import { useInView } from "react-intersection-observer";
 
 const TrustWorthySection = React.memo(() => {
   const totalYrs = 2;
-  const projectsDone = 110;
+  const projectsDone = 50;
   const totalExperts = 15;
-  const happlyClients = 100;
+  const happlyClients = 30;
 
   const [yrs, setYrs] = useState(0);
   const [completedProjects, setCompletedProjects] = useState(0);

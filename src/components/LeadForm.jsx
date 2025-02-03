@@ -80,7 +80,7 @@ const LeadForm = () => {
       <form
         onSubmit={handleSubmit(handleFormSubmit)}
         data-aos="fade-up"
-        className="flex flex-col gap-4 rounded-xl p-5 bg-background w-full max-w-4xl mx-auto mt-5"
+        className="flex flex-col gap-4 rounded-xl p-5 bg-primary/40 w-full max-w-4xl mx-auto mt-5"
       >
         <div className="grid sm:grid-cols-2 gap-5">
           <div className="flex flex-col gap-1">

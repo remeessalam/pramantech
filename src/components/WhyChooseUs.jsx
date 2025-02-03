@@ -1,5 +1,5 @@
 import React from "react";
-import bgImg from "../assets/images/bg-img.webp";
+import bgImg from "../assets/images/bg-img.jpg";
 // import bannerImg from "../assets/images/banner.webp";
 import { ReactComponent as icon1 } from "../assets/svgs/Affordable & Time Efficient.svg";
 import { ReactComponent as icon5 } from "../assets/svgs/End-to-End Solutions.svg";
