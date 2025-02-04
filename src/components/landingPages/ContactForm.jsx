@@ -14,7 +14,7 @@ const ContactForm = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm({
     mode: "all",
     defaultValues: {
@@ -29,7 +29,7 @@ const ContactForm = () => {
   // handle form submit click
   const handleFormSubmit = async (values) => {
     setSpinner(true);
-
+    console.log("spinner");
     var emailBody = "Name: " + values.name + "\n\n";
     emailBody += "Email: " + values.email + "\n\n";
     emailBody += "Phone: " + values.phone + "\n\n";
@@ -37,6 +37,7 @@ const ContactForm = () => {
 
     // Construct the request payload
     var payload = {
+      // to: "remeesreme4u@gmail.com",
       to: companyDetails?.email,
       subject: values.subject,
       body: emailBody,
@@ -176,8 +177,8 @@ const ContactForm = () => {
             <small className="error-message">{errors.message?.message}</small>
           </div>
           <button
-            disabled={isSubmitting}
-            type="button"
+            // disabled={isSubmitting}
+            type="submit"
             className="secondary-btn mt-2"
           >
             Send Message

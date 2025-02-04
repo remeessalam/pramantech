@@ -16,8 +16,8 @@ const ContactUs = () => {
       <PageBanner title="Contact Us" />
       <div className="pt-[3rem]">
         <div className="wrapper">
-          <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto mb-[3rem]">
-            <div
+          <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto mb-[3rem]">
+            {/* <div
               data-aos="fade-up"
               className="bg-primary/5 flex flex-col gap-3 text-primary items-center justify-center rounded-xl p-5"
             >
@@ -25,7 +25,7 @@ const ContactUs = () => {
               <span className="text-center font-medium">
                 {companyDetails?.address}
               </span>
-            </div>
+            </div> */}
             <Link
               to={`mailto:${companyDetails?.email}`}
               data-aos="fade-up"
