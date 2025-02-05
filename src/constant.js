@@ -68,7 +68,7 @@ export const companyDetails = {
   phone: "+91-6309711233",
   address: "ABC Street, City, Country",
   email: "support@pramantech.com",
-  leademail: "Pramantech96@gmail.com",
+  leademail: "pramantech96@gmail.com",
   linkedin: "",
   instagram: "",
   twitter: "",
