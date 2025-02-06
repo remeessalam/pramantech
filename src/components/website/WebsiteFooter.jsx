@@ -141,7 +141,14 @@ const WebsiteFooter = () => {
                 className="flex items-center gap-2"
               >
                 <IoMail className="h-5 w-5" />
-                growbusiness@mirakitech.com
+                {companyDetails.email}
+              </Link>
+              <Link
+                to={`mailto:${companyDetails?.email2}`}
+                className="flex items-center gap-2"
+              >
+                <IoMail className="h-5 w-5" />
+                {companyDetails.email2}
               </Link>
               <div className="flex gap-4">
                 <Link href="#" className="hover:text-white">

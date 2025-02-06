@@ -111,7 +111,7 @@ const ThankYou = () => {
                   />{" "}
                   <span className="text-sm">{companyDetails?.address}</span>
                 </li> */}
-                <li className="flex gap-3 text-primary_text/70">
+                <li className="flex gap-3 flex-col text-primary_text/70">
                   <Link
                     to={`mailto:${companyDetails?.email}`}
                     className="flex gap-3 text-primary_text/70 hover:text-primary transition-colors duration-200"
@@ -122,6 +122,17 @@ const ThankYou = () => {
                       className="text-primary inline"
                     />{" "}
                     <span className="text-sm">{companyDetails?.email}</span>
+                  </Link>
+                  <Link
+                    to={`mailto:${companyDetails?.email2}`}
+                    className="flex gap-3 text-primary_text/70 hover:text-primary transition-colors duration-200"
+                  >
+                    <Mail
+                      strokeWidth={1.5}
+                      size={20}
+                      className="text-primary inline"
+                    />{" "}
+                    <span className="text-sm">{companyDetails?.email2}</span>
                   </Link>
                 </li>
                 <li>

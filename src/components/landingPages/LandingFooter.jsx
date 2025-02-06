@@ -55,7 +55,7 @@ const LandingFooter = () => {
               />{" "}
               <span className="text-sm">{companyDetails?.address}</span>
             </li> */}
-            <li className="flex gap-3 text-primary_text/70">
+            <li className="flex flex-col gap-3 text-primary_text/70">
               <Link
                 aria-label="Contact us on email"
                 to={`mailto:${companyDetails?.email}`}
@@ -67,6 +67,18 @@ const LandingFooter = () => {
                   className="text-primary inline"
                 />{" "}
                 <span className="text-sm">{companyDetails?.email}</span>
+              </Link>
+              <Link
+                aria-label="Contact us on email"
+                to={`mailto:${companyDetails?.email2}`}
+                className="flex gap-3 text-primary_text/70 hover:text-primary transition-colors duration-200"
+              >
+                <Mail
+                  strokeWidth={1.5}
+                  size={20}
+                  className="text-primary inline"
+                />{" "}
+                <span className="text-sm">{companyDetails?.email2}</span>
               </Link>
             </li>
             <li>
