@@ -137,13 +137,6 @@ const WebsiteFooter = () => {
             </p>
             <div className="space-y-4">
               <Link
-                to={`mailto:${companyDetails?.email}`}
-                className="flex items-center gap-2"
-              >
-                <IoMail className="h-5 w-5" />
-                {companyDetails.email}
-              </Link>
-              <Link
                 to={`mailto:${companyDetails?.email2}`}
                 className="flex items-center gap-2"
               >

@@ -16,7 +16,7 @@ const ContactUs = () => {
       <PageBanner title="Contact Us" />
       <div className="pt-[3rem]">
         <div className="wrapper">
-          <div className="grid sm:grid-cols-3 gap-5 max-w-3xl mx-auto mb-[3rem]">
+          <div className="grid sm:grid-cols-2 gap-5 max-w-3xl mx-auto mb-[3rem]">
             {/* <div
               data-aos="fade-up"
               className="bg-primary/5 flex flex-col gap-3 text-primary items-center justify-center rounded-xl p-5"
@@ -26,7 +26,7 @@ const ContactUs = () => {
                 {companyDetails?.address}
               </span>
             </div> */}
-            <Link
+            {/* <Link
               to={`mailto:${companyDetails?.email}`}
               data-aos="fade-up"
               className="bg-primary/5 flex flex-col gap-3 text-primary items-center justify-center rounded-xl p-5"
@@ -35,7 +35,7 @@ const ContactUs = () => {
               <span className="text-center font-medium">
                 {companyDetails?.email}
               </span>
-            </Link>
+            </Link> */}
             <Link
               to={`mailto:${companyDetails?.email2}`}
               data-aos="fade-up"
