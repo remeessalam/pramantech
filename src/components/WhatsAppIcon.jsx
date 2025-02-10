@@ -7,7 +7,7 @@ const WhatsAppIcon = () => {
   return (
     <Link
       className="fixed group bottom-[1.5rem] hover:-translate-y-1 z-30 bg-white rounded-full right-[1.5rem] transition-all duration-200"
-      to={`https://api.whatsapp.com/send/?phone=%2B916309711233&text&type=phone_number&app_absent=0}`}
+      to={`https://api.whatsapp.com/send?phone=%2B916309711233&text=Hello%20i%20want%20to%20enquire%20about%20project&app_absent=0`}
       target="_blank"
       aria-label="Contact us on WhatsApp"
     >
