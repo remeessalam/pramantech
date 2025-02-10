@@ -70,8 +70,10 @@ export const companyDetails = {
   // email: "support@pramantech.com",
   email2: "Info@thepramantech.com",
   leademail: "pramantech96@gmail.com",
-  linkedin: "",
-  instagram: "",
+  linkedin:
+    "https://www.linkedin.com/in/siddhartha-veldanda-2b4262321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  instagram:
+    "https://www.instagram.com/praman_tech?igsh=MTJjZmZvbWl3NWYwNQ%3D%3D&utm_source=qr",
   twitter: "",
 };
 
