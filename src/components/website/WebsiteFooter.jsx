@@ -151,16 +151,22 @@ const WebsiteFooter = () => {
                 {companyDetails.email2}
               </Link>
               <div className="flex gap-4">
-                <Link href="#" className="hover:text-white">
+                <Link to="#" className="hover:text-white">
                   <FaFacebookF />
                 </Link>
-                <Link href="#" className="hover:text-white">
+                <Link
+                  to={companyDetails?.instagram}
+                  className="hover:text-white"
+                >
                   <FaInstagram />
                 </Link>
-                <Link href="#" className="hover:text-white">
+                <Link to="#" className="hover:text-white">
                   <FaYoutube />
                 </Link>
-                <Link href="#" className="hover:text-white">
+                <Link
+                  to={companyDetails?.linkedin}
+                  className="hover:text-white"
+                >
                   <FaLinkedinIn />
                 </Link>
               </div>
