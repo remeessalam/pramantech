@@ -31,21 +31,21 @@ const LandingFooter = () => {
             <Link
               aria-label="Contact us on Instagram"
               to={companyDetails?.instagram}
-              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-white hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Instagram strokeWidth={1.5} size={20} />
             </Link>
-            <Link
+            {/* <Link
               aria-label="Contact us on Twitter"
               to={companyDetails?.twitter}
-              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-white hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Twitter strokeWidth={1.5} size={20} />
-            </Link>
+            </Link> */}
             <Link
               aria-label="Contact us on LinkedIn"
               to={companyDetails?.linkedin}
-              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-primary_text hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
+              className="w-[2rem] h-[2rem] rounded-full p-2 bg-secondary hover:bg-primary text-white hover:text-white hover:-translate-y-1 transition-all duration-300 flex justify-center items-center"
             >
               <Linkedin strokeWidth={1.5} size={20} />
             </Link>
