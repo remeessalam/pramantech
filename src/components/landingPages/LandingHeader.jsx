@@ -2,7 +2,7 @@ import Drawer from "react-modern-drawer";
 import { Divide as Hamburger } from "hamburger-react";
 import React, { useState } from "react";
 import { Link as Scroll } from "react-scroll";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { logoImg } from "../../constant";
 import { X } from "lucide-react";
 import { Helmet } from "react-helmet";
@@ -41,10 +41,10 @@ const LandingHeader = () => {
             {/* Preload the logo image */}
             <link rel="preload" href={logoImg} as="image" type="image/png" />
           </Helmet>
-          <Scroll
+          <NavLink
             aria-label="Home"
             smooth={true}
-            to="banner"
+            to="/"
             className="cursor-pointer"
           >
             <img
@@ -54,7 +54,7 @@ const LandingHeader = () => {
               className="w-[6rem] md:w-[8rem] scale-125 object-contain"
               alt="logo"
             />
-          </Scroll>
+          </NavLink>
           <div className="lg:flex items-center gap-10 hidden">
             <Link to="/" className="link">
               Home

@@ -1,7 +1,7 @@
 import React from "react";
 import { companyDetails, logoImg } from "../../constant";
 import { Instagram, Linkedin, Mail, Phone, Twitter } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
 const LandingFooter = () => {
@@ -13,13 +13,20 @@ const LandingFooter = () => {
             {/* Preload the logo image */}
             <link rel="preload" href={logoImg} as="image" type="image/png" />
           </Helmet>
-          <img
-            width="200"
-            height="50"
-            src={logoImg}
-            className="w-[12rem] object-contain"
-            alt="logo"
-          />
+          <NavLink
+            aria-label="Home"
+            smooth={true}
+            to="/"
+            className="cursor-pointer"
+          >
+            <img
+              width="200"
+              height="50"
+              src={logoImg}
+              className="w-[12rem] object-contain"
+              alt="logo"
+            />
+          </NavLink>
           <div className="flex items-center gap-3 mt-5">
             <Link
               aria-label="Contact us on Instagram"

@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { IoMail } from "react-icons/io5";
 
@@ -125,13 +125,20 @@ const WebsiteFooter = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info Section */}
           <div className="space-y-6">
-            <img
-              width="200"
-              height="50"
-              src={logoImg}
-              className="w-[12rem] object-contain"
-              alt="logo"
-            />
+            <NavLink
+              aria-label="Home"
+              smooth={true}
+              to="/"
+              className="cursor-pointer"
+            >
+              <img
+                width="200"
+                height="50"
+                src={logoImg}
+                className="w-[12rem] object-contain"
+                alt="logo"
+              />
+            </NavLink>
             <p className="text-lg">
               Driving Innovation, Redefining Possibilities, Powering Success!
             </p>
