@@ -66,7 +66,7 @@ export { logoImg };
 
 export const companyDetails = {
   phone: "+91-6309711233",
-  address: "ABC Street, City, Country",
+  address: "Salarpuria Symbiosis, Ground floor Bannerghatta Road Arekere Village, Begur Hobli, Bengaluru, Karnataka 560076",
   // email: "support@pramantech.com",
   email2: "Info@thepramantech.com",
   leademail: "pramantech96@gmail.com",

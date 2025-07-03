@@ -101,10 +101,16 @@ const WebsiteFooter = () => {
           {/* Locations Section */}
           <div className="space-y-6">
             <div className="flex items-start gap-2">
-              <HiLocationMarker className="h-6 w-6 mt-1" />
-              <div>
-                <h4 className="text-black font-semibold">India</h4>
-                <p>{companyDetails?.phone}</p>
+              <div className="space-y-3">
+                <h3 className="text-black text-xl font-semibold mb-6">
+                  Contact
+                </h3>
+                <p>
+                  <b>Phone</b> : {companyDetails?.phone}
+                </p>
+                <p>
+                  <b>Location</b> : {companyDetails.address}
+                </p>
               </div>
             </div>
           </div>
